@@ -9,8 +9,8 @@
 // console.log(doubled);
 
 let cars = [
-  { type: "軽自動車", price: "安い" },
-  { type: "高級車", price: "高い" },
+  { type: '軽自動車', price: '安い' },
+  { type: '高級車', price: '高い' },
 ];
 
 let prices = cars.map(function (car) {
@@ -20,8 +20,8 @@ let prices = cars.map(function (car) {
 console.log(prices);
 
 // あるオブジェクトの配列から特定のプロパティを抜き取ってくる関数
-function pluck(array, property) {
-  return array.map(function (element) {
+function pluck(array: any, property: any) {
+  return array.map(function (element: any) {
     return element[property]; // propertyで指定されたプロパティの値を取得する！
   });
 }
